@@ -4,3 +4,27 @@
     padding: 0;
     border: none;
 }
+
+@font-face {
+    font-family: 'bank-gothic-medium';
+    src: url('../asset/fonts/bank-gothic-medium.woff2');
+}
+@font-face {
+    font-family: 'bank-gothic-regular';
+    src:url('../asset/fonts/bank-gothic-regular.woff2');
+}
+@font-face {
+    font-family: 'tomkin-medium';
+    src: url('../asset/fonts/tomkin-medium.woff2');
+}
+@font-face {
+    font-family: 'tomkin-regular';
+    src:url('../asset/fonts/tomkin-regular.woff2');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'tomkin-medium';
+}
+p, a, li, span, input, button {
+    font-family: 'tomkin-regular';
+}

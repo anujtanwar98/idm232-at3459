@@ -1,2 +1,3 @@
-public_html/my-test/.env.php
+.env.php
+.env.production.php
 final-test

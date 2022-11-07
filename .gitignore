@@ -1,3 +1,5 @@
 .env.php
 .env.production.php
+.env.local.php
 final-test
+final-old

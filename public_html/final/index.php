@@ -1,70 +1,79 @@
-<?php include_once 'components/header.php'; ?>
-<?php include_once 'components/navbar.php'; ?>
-<?php $title = 'All Recipes';?>
-<h1 class="text-center"><?php echo $title; ?></h1>
-<section id="main-my-box">
-  <div class="small-box-recipes">
-    <div class="box-image-text">
-      <img src="../final/asset/images/1.jpg" class="my-images" alt="...">
-      <h4>Mediterranean Chickpea Salad</h4>
-    </div>
-  </div>
-  <div class="small-box-recipes">
-    <div class="box-image-text">
-      <img src="../final/asset/images/2.jpg" class="my-images" alt="...">
-      <h4>Chickpea Salad Sandwich</h4>
-    </div>
-  </div>
-  <div class="small-box-recipes">
-    <div class="box-image-text">
-      <img src="../final/asset/images/3.jpg" class="my-images" alt="...">
-      <h4>Cajun-Spiced Grilled Corn</h4>
-    </div>
-  </div>
-  <div class="small-box-recipes">
-    <div class="box-image-text">
-      <img src="../final/asset/images/4.jpg" class="my-images" alt="...">
-      <h4>Sesame Peanut Noodles</h4>
-    </div>
-  </div>
-  <div class="small-box-recipes">
-    <div class="box-image-text">
-      <img src="../final/asset/images/5.jpg" class="my-images" alt="...">
-      <h4>Vegan Caesar Dressing</h4>
-    </div>
-  </div>
-  <div class="small-box-recipes">
-    <div class="box-image-text">
-      <img src="../final/asset/images/6.jpg" class="my-images" alt="...">
-      <h4>Spinach Tofu Scramble</h4>
-    </div>
-  </div>
-  <div class="small-box-recipes">
-    <div class="box-image-text">
-      <img src="../final/asset/images/7.jpg" class="my-images" alt="...">
-      <h4>Homemade Tortilla Chips</h4>
-    </div>
-  </div>
-  <div class="small-box-recipes">
-    <div class="box-image-text">
-      <img src="../final/asset/images/8.jpg" class="my-images" alt="...">
-      <h4>Homemade Pancake</h4>
-    </div>
-  </div>
-</section>
+<?php
+include_once __DIR__ . '/app.php';
+$page_title = 'Home';
+include_once __DIR__ . '/_components/header.php';
+?>
 
-<!-- <div class="row">
-  <div class="col">
-  <img src="../final/asset/images/5.jpg" class="img-fluid rounded" alt="..." style="width: 300px;" style="height: 300px;">
-  </div>
-  <div class="col">
-  <img src="../final/asset/images/6.jpg" class="img-fluid rounded" alt="..." style="width: 300px;" style="height: 300px;">
-  </div>
-  <div class="col">
-  <img src="../final/asset/images/7.jpg" class="img-fluid rounded" alt="..." style="width: 300px;" style="height: 300px;">
-  </div>
-  <div class="col">
-  <img src="../final/asset/images/8.jpg" class="img-fluid rounded" alt="..." style="width: 300px;" style="height: 300px;">
-  </div>
-</div> -->
-<?php include_once 'components/footer.php'; ?>
+<?php include_once __DIR__ . '/_components/navbar.php'; ?>
+<main class="main">
+  <?php $title = 'All Recipes';?>
+  <h1 class="text-center text-white"><?php echo $title; ?></h1>
+  <div id="main-my-box">
+    <div class="small-box-recipes">
+      <a class="box-recipes-link" href="./mediterranean-chickpea-salad.php">
+      <!-- <div class="box-image-text"> -->
+        <img src="./dist/images/1.jpg" class="my-images" alt="...">
+        <h4 class="text-center">Mediterranean Chickpea Salad</h4>
+      <!-- </div> -->
+      </a>
+    </div>
+    <div class="small-box-recipes">
+      <a class="box-recipes-link" href="./chickpea-salad-sandwich.php">
+      <!-- <div class="box-image-text"> -->
+        <img src="./dist/images/2.jpg" class="my-images" alt="...">
+        <h4 class="text-center">Chickpea Salad Sandwich</h4>
+      <!-- </div> -->
+      </a>
+    </div>
+    <div class="small-box-recipes">
+      <a class="box-recipes-link" href="./cajun-spiced.php">
+      <!-- <div class="box-image-text"> -->
+        <img src="./dist/images/3.jpg" class="my-images" alt="...">
+        <h4 class="text-center">Cajun-Spiced Grilled Corn</h4>
+      <!-- </div> -->
+      </a>
+    </div>
+    <div class="small-box-recipes">
+      <a class="box-recipes-link" href="./sesame-noodles.php">
+      <!-- <div class="box-image-text"> -->
+        <img src="./dist/images/4.jpg" class="my-images" alt="...">
+        <h4 class="text-center">Sesame Peanut Noodles</h4>
+      <!-- </div> -->
+      </a>
+    </div>
+    <div class="small-box-recipes">
+      <a class="box-recipes-link" href="./vegan-caesar-dressing.php">
+      <!-- <div class="box-image-text"> -->
+        <img src="./dist/images/5.jpg" class="my-images" alt="...">
+        <h4 class="text-center">Vegan Caesar Dressing</h4>
+      <!-- </div> -->
+      </a>
+    </div>
+    <div class="small-box-recipes">
+      <a class="box-recipes-link" href="./spinach-tofu.php">
+      <!-- <div class="box-image-text"> -->
+        <img src="./dist/images/6.jpg" class="my-images" alt="...">
+        <h4 class="text-center">Spinach Tofu Scramble</h4>
+      <!-- </div> -->
+      </a>
+    </div>
+    <div class="small-box-recipes">
+      <a class="box-recipes-link" href="./homemade-tortilla.php">
+      <!-- <div class="box-image-text"> -->
+        <img src="./dist/images/7.jpg" class="my-images" alt="...">
+        <h4 class="text-center">Homemade Tortilla Chips</h4>
+      <!-- </div> -->
+      </a>
+    </div>
+    <div class="small-box-recipes">
+      <a class="box-recipes-link" href="./homemade-pancake.php">
+      <!-- <div class="box-image-text"> -->
+        <img src="./dist/images/8.jpg" class="my-images" alt="...">
+        <h4 class="text-center">Homemade Pancake</h4>
+      <!-- </div> -->
+      </a>
+    </div>
+</div>
+</main>
+
+<?php include_once __DIR__ . '/_components/footer.php';

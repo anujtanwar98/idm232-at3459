@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/index.php">All Recipes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>./admin/recipes/index.php">Admin</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/admin/recipes/index.php">Admin</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Quick Veg Recipes</a>

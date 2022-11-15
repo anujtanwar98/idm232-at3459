@@ -52,7 +52,7 @@ if ($result->num_rows > 0) {
               </div>
               <input class="btn btn-primary" type="submit" value="Update Recipe">
 
-              <input type="hidden" name="id" value="">
+              <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
             </form>
           </div>
         </div>

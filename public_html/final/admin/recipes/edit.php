@@ -50,9 +50,7 @@ if ($result->num_rows > 0) {
                 <label for="">Steps</label>
                 <input class="border-black border-2" type="text" name="steps" value="<?php echo $recipe['steps']?>">
               </div>
-              <input class=" nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4
-                  py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2
-                  focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto" type="submit" value="Update Recipe">
+              <input class="btn btn-primary" type="submit" value="Update Recipe">
 
               <input type="hidden" name="id" value="">
             </form>

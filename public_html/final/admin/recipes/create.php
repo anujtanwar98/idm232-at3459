@@ -36,11 +36,11 @@ include_once __DIR__ . '/../../_components/header.php';
                             </div>
                             <div class="block">
                                 <label for="">Ingredients</label>
-                                <textarea name="ingredients" id="" cols="30" rows="10"></textarea>
+                                <textarea class="js-tinymce" name="ingredients" id="" cols="30" rows="10"></textarea>
                             </div>
                             <div class="block">
                                 <label for="">Steps</label>
-                                <textarea name="steps" id="" cols="30" rows="10"></textarea>
+                                <textarea class="js-tinymce" name="steps" id="" cols="30" rows="10"></textarea>
                             </div>
                             <input type="submit" value="submit">
                         </form>

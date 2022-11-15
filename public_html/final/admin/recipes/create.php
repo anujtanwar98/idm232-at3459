@@ -42,7 +42,7 @@ include_once __DIR__ . '/../../_components/header.php';
                                 <label for="">Steps</label>
                                 <textarea class="js-tinymce" name="steps" id="" cols="30" rows="10"></textarea>
                             </div>
-                            <input type="submit" value="submit">
+                            <input class="btn btn-primary" type="submit" value="submit">
                         </form>
                     </div>
                     </div>

@@ -39,16 +39,16 @@ if ($result->num_rows > 0) {
             <form action="<?php echo site_url(); ?>/_includes/process-edit-recipes.php" method="POST">
               <div class="block">
                 <label for="">Recipe Title</label>
-                <input class="border-black border-2" type="text" name="recipe_title"
+                <input type="text" name="recipe_title"
                   value="<?php echo $recipe['recipe_title']?>">
               </div>
               <div class=" block">
                 <label for="">Ingredients</label>
-                <input class="border-black border-2" type="text" name="ingredients" value="<?php echo $recipe['ingredients']?>">
+                <input class="js-tinymce" type="text" name="ingredients" value="<?php echo $recipe['ingredients']?>">
               </div>
               <div class=" block">
                 <label for="">Steps</label>
-                <input class="border-black border-2" type="text" name="steps" value="<?php echo $recipe['steps']?>">
+                <input class="js-tinymce" type="text" name="steps" value="<?php echo $recipe['steps']?>">
               </div>
               <input class="btn btn-primary" type="submit" value="Update Recipe">
 

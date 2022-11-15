@@ -44,11 +44,11 @@ if ($result->num_rows > 0) {
               </div>
               <div class=" block">
                 <label for="">Ingredients</label>
-                <input class="js-tinymce" type="text" name="ingredients" value="<?php echo $recipe['ingredients']?>">
+                <textarea class="js-tinymce" type="text" name="ingredients"><?php echo $recipe['ingredients']?></textarea>
               </div>
               <div class=" block">
                 <label for="">Steps</label>
-                <input class="js-tinymce" type="text" name="steps" value="<?php echo $recipe['steps']?>">
+                <textarea class="js-tinymce" type="text" name="steps"><?php echo $recipe['steps']?></textarea>
               </div>
               <input class="btn btn-primary" type="submit" value="Update Recipe">
 

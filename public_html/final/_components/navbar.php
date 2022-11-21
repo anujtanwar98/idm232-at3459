@@ -22,10 +22,11 @@
           <a class="nav-link" href="#">Quick Veg Recipes</a>
         </li> -->
       </ul>
-      <form class="d-flex" role="search">
+      <?php include_once __DIR__ . '/search-bar.php'; ?>
+      <!-- <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-primary" type="submit">Search</button>
-      </form>
+      </form> -->
     </div>
   </div>
 </nav>

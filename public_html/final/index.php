@@ -4,7 +4,14 @@ $page_title = 'Home';
 include_once __DIR__ . '/_components/header.php';
 ?>
 
-<?php include_once __DIR__ . '/_components/navbar.php'; ?>
+<?php include_once __DIR__ . '/_components/navbar.php'; 
+$recipes = get_recipes();
+?>
+<?php
+    // get recipes data from database
+    $query = 'SELECT * FROM recipes';
+    $result = mysqli_query($db_connection, $query);
+?>
 <main class="main">
   <?php $title = 'All Recipes';?>
   <h1 class="text-center text-white"><?php echo $title; ?></h1>
@@ -12,6 +19,11 @@ include_once __DIR__ . '/_components/header.php';
   <a class="text-white" href="<?php echo site_url(); ?>/admin/recipes/create.php" style="text-decoration: none;">Add Recipe</a>
 </button> -->
   <div id="main-my-box">
+    <div class="p-lg-0 mt-3 mx-0">  
+      <div class="w-100 d-flex flex-wrap justify-content-around justify-content-lg-between m-0">
+        <?php include __DIR__ . '/_components/recipesCard.php'; ?>
+      </div>
+    </div>
     <div class="small-box-recipes">
       <a class="box-recipes-link" href="./mediterranean-chickpea-salad.php">
       <!-- <div class="box-image-text"> -->

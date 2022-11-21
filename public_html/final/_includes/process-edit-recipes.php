@@ -21,6 +21,6 @@ $result = mysqli_query($db_connection, $query);
 if ($result) {
     redirect_to('/admin/recipes');
 } else {
-    $error_message = 'User was not updated';
+    $error_message = 'recipe was not updated';
     redirect_to('/admin/recipes?error=' . $error_message);
 }

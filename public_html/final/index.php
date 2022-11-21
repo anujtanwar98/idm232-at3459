@@ -19,11 +19,11 @@ $recipes = get_recipes();
   <a class="text-white" href="<?php echo site_url(); ?>/admin/recipes/create.php" style="text-decoration: none;">Add Recipe</a>
 </button> -->
   <div id="main-my-box">
-    <div class="p-lg-0 mt-3 mx-0">  
-      <div class="w-100 d-flex flex-wrap justify-content-around justify-content-lg-between m-0">
+    <!-- <div class="p-lg-0 mt-3 mx-0">   -->
+      <!-- <div class="w-100 d-flex flex-wrap justify-content-around justify-content-lg-between m-0"> -->
         <?php include __DIR__ . '/_components/recipesCard.php'; ?>
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
     <div class="small-box-recipes">
       <a class="box-recipes-link" href="./mediterranean-chickpea-salad.php">
       <!-- <div class="box-image-text"> -->

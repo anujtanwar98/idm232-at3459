@@ -11,6 +11,8 @@
       &copy; Anuj Tanwar <?php echo date("Y"); ?>
           <br>
           Only for Educational purposes only
+          <br>
+          (Recipes Courtesy) Recipes are not mine and are taken from simply recipes for Educational purposes only. 
     </p>
   </footer>
   <!-- JavaScript Bundle with Popper -->

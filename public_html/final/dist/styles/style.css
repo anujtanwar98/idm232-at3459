@@ -245,3 +245,14 @@ table {
 
 
 /* recipe detail page end */
+
+/*  table responsive start  */
+.my-table {
+  overflow-x: auto;
+  padding: 20px 30px;
+}
+
+table {
+  width: 100%;
+}
+/* table responsive end */

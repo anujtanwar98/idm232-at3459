@@ -35,6 +35,14 @@ include_once __DIR__ . '/../../_components/header.php';
                                 <input type="text" name="recipe_title">
                             </div>
                             <div class="block">
+                                <label for="">Image Path Small</label>
+                                <input type="text" name="image_path_small">
+                            </div>
+                            <div class="block">
+                                <label for="">Image Path Large</label>
+                                <input type="text" name="image_path_large">
+                            </div>
+                            <div class="block">
                                 <label for="">Ingredients</label>
                                 <textarea class="js-tinymce" name="ingredients" id="" cols="30" rows="10"></textarea>
                             </div>

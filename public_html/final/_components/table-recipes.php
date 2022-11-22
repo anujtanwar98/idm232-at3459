@@ -9,6 +9,8 @@ if (!isset($recipes)) {
       <tr>
         <th scope="col">ID</th>
         <th scope="col">Title</th>
+        <th scope="col">Small Image</th>
+        <th scope="col">Big Image</th>
         <th scope="col">Ingredients</th>
         <th scope="col">Steps</th>
         <th scope="col">
@@ -38,6 +40,8 @@ if (!isset($recipes)) {
             <tr>
               <td>{$recipe['id']}</td>
               <td>{$recipe['recipe_title']}</td>
+              <td><img src='{$site_url}{$recipe['image_path_small']}' alt=''></td>
+              <td><img src='{$site_url}{$recipe['image_path_large']}' alt=''></td>
               <td>{$recipe['ingredients']}</td>
               <td>{$recipe['steps']}</td>
               <td>

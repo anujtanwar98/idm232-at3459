@@ -7,11 +7,15 @@ if (!$_POST) {
 
 // Store $_POST data to variables for readability
 $recipe_title = $_POST['recipe_title'];
+$image_path_small = $_POST['image_path_small'];
+$image_path_large = $_POST['image_path_large'];
 $ingredients = $_POST['ingredients'];
 $steps = $_POST['steps'];
 
 $result = add_recipe(
     $recipe_title,
+    $image_path_small,
+    $image_path_large,
     $ingredients,
     $steps
 );

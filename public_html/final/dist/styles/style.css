@@ -255,4 +255,21 @@ table {
 table {
   width: 100%;
 }
+/* .td-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 100px;
+  border-color: red;
+} */
+.my-table img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 100px;
+  border-color: red;
+}
+
 /* table responsive end */

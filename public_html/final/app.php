@@ -29,4 +29,3 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist_host)) {
 include_once __DIR__ . '/_includes/database.php';
 include_once __DIR__ . '/_includes/helper-functions.php';
 include_once __DIR__ . '/_includes/recipes-functions.php';
-include_once __DIR__ . '/_includes/services-functions.php';

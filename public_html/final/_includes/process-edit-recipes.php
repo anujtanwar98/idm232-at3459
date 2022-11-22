@@ -7,12 +7,14 @@ if (!$_POST) {
 
 // Store $_POST data to variables for readability
 $recipe_title = $_POST['recipe_title'];
+$image_path_small = $_POST['image_path_small'];
+$image_path_large = $_POST['image_path_large'];
 $ingredients = $_POST['ingredients'];
 $steps = $_POST['steps'];
 $id = $_POST['id'];
 
 // Create a SQL statement to insert the data into the database
-$query = "UPDATE recipes SET recipe_title = '{$recipe_title}', ingredients = '{$ingredients}', steps = '{$steps}' WHERE id = {$id}";
+$query = "UPDATE recipes SET recipe_title = '{$recipe_title}', image_path_small = '{$image_path_small}', image_path_large = '{$image_path_large}', ingredients = '{$ingredients}', steps = '{$steps}' WHERE id = {$id}";
 
 // Run the SQL statement
 $result = mysqli_query($db_connection, $query);

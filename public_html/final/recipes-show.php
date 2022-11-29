@@ -5,7 +5,7 @@ $page_title = 'Recipes Detail';
 include_once __DIR__ . '/_components/header.php';
 ?>
 <?php include_once __DIR__ . '/_components/navbar.php'; 
-$recipes = get_recipes();
+// $recipes = get_recipes();
 ?>
 
 <?php
@@ -21,21 +21,16 @@ if ($result->num_rows > 0) {
 }
 
 ?>
-<?php
-if (!isset($recipes)) {
-    echo '$recipes variable is not defined. Please check the code.';
-}
-?>   
+   
           
 <?php
     $site_url = site_url();
-    while ($recipe = mysqli_fetch_array($recipes)) {
         echo "
         <main class='main'>
         <div class='container text-white'>
             <h1 class='text-center'>{$recipe['recipe_title']}</h1>
             <div class='recipe-detail-image'>
-                <img src='{$recipe['image_path_large']}' class='detail-page-image-1'>
+                <img src='{$site_url}{$recipe['image_path_large']}' class='detail-page-image-1'>
             </div>
             <div class='recipe-detail-ingredients'>
                 <h2>Ingredients</h2>
@@ -48,7 +43,7 @@ if (!isset($recipes)) {
         </div>
     </main>
         ";
-    }
+    
 ?>
 
 <?php include_once __DIR__ . '/_components/footer.php'; ?>

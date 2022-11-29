@@ -60,4 +60,4 @@ include_once __DIR__ . '/../../_components/header.php';
     </div>
 
 <!-- </main> -->
-<?php include_once __DIR__ . '/../../_components/footer.php';
+<?php include_once __DIR__ . '/../../_components/footer.php'; ?>

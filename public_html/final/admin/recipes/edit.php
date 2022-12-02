@@ -52,6 +52,10 @@ if ($result->num_rows > 0) {
                 <input type="text" name="image_path_large"
                   value="<?php echo $recipe['image_path_large']?>">
               </div>
+              <div class="block">
+                <label for="">Description</label>
+                <textarea class="js-tinymce" type="text" name="description"><?php echo $recipe['description']?></textarea>
+              </div>
               <div class=" block">
                 <label for="">Ingredients</label>
                 <textarea class="js-tinymce" type="text" name="ingredients"><?php echo $recipe['ingredients']?></textarea>

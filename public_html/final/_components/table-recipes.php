@@ -16,7 +16,7 @@ if (!isset($recipes)) {
         <th scope="col">
           <span class="sr-only">Edit</span>
         </th>
-        <th scope="col">Actions</th>
+        <th scope="col">View recipes</th>
       </tr>
     </thead>
 

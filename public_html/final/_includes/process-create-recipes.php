@@ -9,6 +9,7 @@ if (!$_POST) {
 $recipe_title = sanitize_value($_POST['recipe_title']);
 $image_path_small = sanitize_value($_POST['image_path_small']);
 $image_path_large = sanitize_value($_POST['image_path_large']);
+$description = sanitize_value($_POST['description']);
 $ingredients = sanitize_value($_POST['ingredients']);
 $steps = sanitize_value($_POST['steps']);
 
@@ -16,6 +17,7 @@ $result = add_recipe(
     $recipe_title,
     $image_path_small,
     $image_path_large,
+    $description,
     $ingredients,
     $steps
 );

@@ -17,16 +17,17 @@ function get_recipes()
  * @param  string $recipe_title - title of the recipe
  * @param  string $image_path_small - small image of the recipe
  * @param  string $image_path_large - large image of the recipe
+ * @param  string $description - description of the recipe
  * @param  string $ingredients - ingredients of the recipe
  * @param  string $steps - steps of the recipe
  * @return object - mysqli_result
  */
-function add_recipe($recipe_title, $image_path_small, $image_path_large, $ingredients, $steps)
+function add_recipe($recipe_title, $image_path_small, $image_path_large, $description, $ingredients, $steps)
 {
     global $db_connection;
     $query = 'INSERT INTO recipes';
-    $query .= ' (recipe_title, image_path_small, image_path_large, ingredients, steps)';
-    $query .= " VALUES ('$recipe_title', '$image_path_small', '$image_path_large', '$ingredients', '$steps')";
+    $query .= ' (recipe_title, image_path_small, image_path_large, description, ingredients, steps)';
+    $query .= " VALUES ('$recipe_title', '$image_path_small', '$image_path_large', '$description', '$ingredients', '$steps')";
 
     $result = mysqli_query($db_connection, $query);
     return $result;

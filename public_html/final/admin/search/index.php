@@ -15,6 +15,7 @@ if (isset($_GET['search'])) {
 $query = 'SELECT *';
 $query .= ' FROM recipes';
 $query .= " WHERE recipe_title LIKE '%{$search}%'";
+$query .= " OR description LIKE '%{$search}%'";
 $query .= " OR ingredients LIKE '%{$search}%'";
 $query .= " OR steps LIKE '%{$search}%'";
 $results = mysqli_query($db_connection, $query);

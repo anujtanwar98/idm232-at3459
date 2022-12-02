@@ -37,17 +37,17 @@ if (!isset($recipes)) {
               <td><img src='{$site_url}{$recipe['image_path_large']}' alt=''></td>
               
               <td>
-              <button class='btn btn-primary'>
-                <a class='text-white' href='{$site_url}/admin/recipes/edit.php?id={$recipe['id']}' style='text-decoration: none;'>Edit</a>
-              </button>
-              <button class='btn btn-danger'>
-                <a class='text-white' href='{$site_url}/admin/recipes/delete.php?id={$recipe['id']}' style='text-decoration: none;'>Delete</a>
-              </button>
+                <a class='text-white' href='{$site_url}/admin/recipes/edit.php?id={$recipe['id']}' style='text-decoration: none;'>
+                  <button class='btn btn-primary'>Edit</button>
+                </a>     
+                <a class='text-white' href='{$site_url}/admin/recipes/delete.php?id={$recipe['id']}' style='text-decoration: none;'>
+                  <button class='btn btn-danger'>Delete</button>
+                </a>
               </td>
               <td>
-              <button class='btn btn-primary'>
-                <a class='text-white' href='{$site_url}/recipes-show.php?id={$recipe['id']}' style='text-decoration: none;'>View</a>
-              </button>
+                <a class='text-white' href='{$site_url}/recipes-show.php?id={$recipe['id']}' style='text-decoration: none;'>
+                  <button class='btn btn-primary'>View</button>
+                </a>
               </td>
             </tr>";
       }

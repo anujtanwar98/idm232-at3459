@@ -27,9 +27,9 @@ $recipes = get_recipes();
           ?>
         </div>
         <div>
-        <button class="btn btn-primary">
-          <a class="text-white" href="<?php echo site_url(); ?>/admin/recipes/create.php" style="text-decoration: none;">Create Recipe</a>
-        </button>
+        <a class="text-white" href="<?php echo site_url(); ?>/admin/recipes/create.php" style="text-decoration: none;">
+          <button class="btn btn-primary">Create Recipe</button>
+        </a>
         </div>
       </div>
       <div class="mt-8 flex flex-col">

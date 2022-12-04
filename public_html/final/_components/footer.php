@@ -7,12 +7,12 @@
   </footer> -->
 
   <footer class="bg-dark">
-    <p class="footer-copyright text-center py-3 mb-3 text-white">
+    <p class="footer-copyright text-center py-3 mb-0 text-white">
       &copy; Anuj Tanwar <?php echo date("Y"); ?>
           <br>
           Only for Educational purposes only
           <br>
-          (Recipes Courtesy) Recipes are not mine and are taken from simply recipes for Educational purposes only. 
+          (Recipes Courtesy) Recipes are not mine and are taken from simply recipes and all recipes for Educational purposes only. 
     </p>
   </footer>
   <!-- JavaScript Bundle with Popper -->
